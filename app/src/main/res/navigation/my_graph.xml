@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="xyz.wuhen.pornhub.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="xyz.wuhen.pornhub.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" >
+        <action
+            android:id="@+id/action_configFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_signalSettingFragment"
+            app:destination="@id/signalSettingFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_phoneSettingFragment"
+            app:destination="@id/phoneSettingFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_formatSettingFragment"
+            app:destination="@id/formatSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="xyz.wuhen.pornhub.HelpFragment"
+        android:label="fragment_signal_setting"
+        tools:layout="@layout/fragment_signal_setting" >
+        <action
+            android:id="@+id/action_helpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formatSettingFragment"
+        android:name="xyz.wuhen.pornhub.FormatSettingFragment"
+        android:label="fragment_format_setting"
+        tools:layout="@layout/fragment_format_setting" >
+        <action
+            android:id="@+id/action_formatSettingFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneSettingFragment"
+        android:name="xyz.wuhen.pornhub.PhoneSettingFragment"
+        android:label="fragment_phone_setting"
+        tools:layout="@layout/fragment_phone_setting" >
+        <action
+            android:id="@+id/action_phoneSettingFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanWifiFragment"
+        android:name="xyz.wuhen.pornhub.ScanWifiFragment"
+        android:label="fragment_scan_wifi"
+        tools:layout="@layout/fragment_scan_wifi" >
+        <action
+            android:id="@+id/action_scanWifiFragment_to_signalSettingFragment"
+            app:destination="@id/signalSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signalSettingFragment"
+        android:name="xyz.wuhen.pornhub.SignalSettingFragment"
+        android:label="SignalSettingFragment" >
+        <action
+            android:id="@+id/action_signalSettingFragment_to_scanWifiFragment"
+            app:destination="@id/scanWifiFragment" />
+        <action
+            android:id="@+id/action_signalSettingFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+</navigation>

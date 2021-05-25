@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Pornhub</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Home_TextView_Signals_Title">Signals</string>
+    <string name="Home_TextView_Signals_List" translatable="false">Signals_List</string>
+    <string name="Home_TextView_Phone_Title">Phone</string>
+    <string name="Home_TextView_Phone_List" translatable="false">Phone_List</string>
+    <string name="Home_TextView_Format_Title">Format_Title</string>
+    <string name="Home_TextView_Format_List" translatable="false">Format_List</string>
+    <string name="Home_Button_Help">help</string>
+    <string name="Home_Button_Config">config</string>
+    <string name="Help_TextView_Help_Title">Help</string>
+    <string name="Help_TextView_Help_Details" translatable="false">Help_Details</string>
+    <string name="Help_Button_Back">back</string>
+    <string name="Config_Button_Signals_Setting">signals setting</string>
+    <string name="Config_Button_Phone_Setting">phone setting</string>
+    <string name="Config_Button_Format_Setting">format setting</string>
+    <string name="Config_Button_Back">back</string>
+    <string name="PhoneSetting_TextView_Phone_Title">phone</string>
+    <string name="PhoneSetting_TextView_Phone_List" translatable="false">phone list</string>
+    <string name="PhoneSetting_Button_Add">add</string>
+    <string name="PhoneSetting_Button_Delete">delete</string>
+    <string name="PhoneSetting_Button_Back">back</string>
+    <string name="PhoneSetting_Button_Clear">clear</string>
+    <string name="FormatSetting_Button_Update">update</string>
+    <string name="FormatSetting_TextView_Format" translatable="false">format</string>
+    <string name="FormatSetting_TextView_Format_Title">format</string>
+    <string name="FormatSetting_Button_Back">back</string>
+    <string name="SignalSetting_Button_Back">back</string>
+    <string name="SignalSetting_Button_Delete">delete</string>
+    <string name="SignalSetting_Button_Clear">clear</string>
+    <string name="SignalSetting_Button_Add">add</string>
+    <string name="SignalSetting_TextView_Signal_Title">signals</string>
+    <string name="SignalSetting_TextView_Signal_List" translatable="false">Signal_List</string>
+    <string name="SignalSetting_TextView_Name">Name</string>
+    <string name="SignalSetting_TextView_Mac">Mac</string>
+    <string name="SignalSetting_TextView_Index">Index</string>
+    <string name="SignalSetting_Button_Scan">Scan Wifi</string>
+    <string name="SignalSetting_EditTextTextPersonName_Name_Hint">Wifi Name</string>
+    <string name="SignalSetting_EditTextTextPersonName_Mac_Hint">"Wifi Mac "</string>
+    <string name="SignalSetting_EditTextNumber_Index">wifi index</string>
+    <string name="ScanWifi_Button_Update">update</string>
+    <string name="ScanWifi_Button_Add">add</string>
+    <string name="ScanWifi_Button_Back">back</string>
+    <string name="ScanWifi_TextView_WifiList_Title">Wifi List</string>
+    <string name="ScanWifi_TextView_WifiList_List" translatable="false">Wifi</string>
+    <string name="ScanWifi_EditTextNumber_Index_Hint">Wifi index</string>
+
+
+    <string name="data_phone_list_name" translatable="false">phoneList</string>
+    <string name="data_signals_name" translatable="false">signals</string>
+    <string name="data_messageFormat_name" translatable="false">messageFormat</string>
+    <string name="data_count" translatable="false">count</string>
+    <string name="data_help" translatable="false">数据格式：*为占位符，与信号一一对应。\n
+                             手机号列表：需将要监听的号码加入该列表。\n
+                             信号列表：将需要检测的信号源加入该列表，Mac值为标识。数量需要与数据格式中的*对应。\n
+    </string>
+
+    <string name="key_phone" translatable="false">phone</string>
+    <string name="key_signal_name" translatable="false">signalName</string>
+    <string name="key_signal_Mac" translatable="false">signalMac</string>
+    <string name="key_format" translatable="false">format</string>
+    <string name="key_phone_number" translatable="false">phoneN</string>
+    <string name="key_signal_number" translatable="false">signalN</string>
+    <string name="PhoneSetting_editText_phone_hint">请输入号码</string>
+    <string name="PhoneSetting_editText_Index_hint">请输入索引</string>
+    <string name="FormatSetting_editText_format_hint">请输入格式</string>
+
+</resources>
