@@ -196,7 +196,7 @@ public class Config {
         SharedPreferences shp_signals = context.getSharedPreferences(signals,Context.MODE_PRIVATE);
         if(shp_signals.getAll().size() != 0) {
             for(int i = 0;i < this.getSignalNumber();i++) {
-                Wifi wifi = new Wifi(shp_signals.getString(key_signal_Name + i,"null"),shp_signals.getString(key_signal_Mac + 1,"null"));
+                Wifi wifi = new Wifi(shp_signals.getString(key_signal_Name + i,"null"),shp_signals.getString(key_signal_Mac + i,"null"));
                 this.getSignals().getList().add(wifi);
             }
         }
