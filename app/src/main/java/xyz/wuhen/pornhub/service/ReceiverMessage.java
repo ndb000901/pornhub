@@ -29,21 +29,21 @@ public class ReceiverMessage extends BroadcastReceiver {
         String srcPhone = msgs[0].getDisplayOriginatingAddress();
         for(String phone : MainActivity.config.getPhoneList()) {
             //小米手机
-//            if (srcPhone.equals("+86" + phone)) {
-//                if(msgs[0].getDisplayMessageBody().equals("loc")) {
-//                    SendMessage sendMessage = new SendMessage(phone);
-//                    sendMessage.send();
-//                }
-//
-//            }
-            //华为手机
-            if (srcPhone.equals(phone)) {
+            if (srcPhone.equals("+86" + phone)) {
                 if(msgs[0].getDisplayMessageBody().equals("loc")) {
                     SendMessage sendMessage = new SendMessage(phone);
                     sendMessage.send();
                 }
 
             }
+            //华为手机
+//            if (srcPhone.equals(phone)) {
+//                if(msgs[0].getDisplayMessageBody().equals("loc")) {
+//                    SendMessage sendMessage = new SendMessage(phone);
+//                    sendMessage.send();
+//                }
+//
+//            }
         }
         Log.d("haha", strb.toString());
         Toast.makeText(arg0, strb.toString(), Toast.LENGTH_LONG).show();
